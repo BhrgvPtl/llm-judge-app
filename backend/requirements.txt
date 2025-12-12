@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+pydantic
+PyYAML
+transformers
+torch
+accelerate
+huggingface-hub
+protobuf<4.0.0

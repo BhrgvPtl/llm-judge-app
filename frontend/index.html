@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>LLM Judge App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-container">
+      <header>
+        <h1>LLM Judge App</h1>
+        <p>Pick a task, ask a question, and see 5 top models compete.</p>
+      </header>
+
+      <main>
+        <section class="controls">
+          <div class="field">
+            <label for="task-select">What do you plan to do today?</label>
+            <select id="task-select"></select>
+          </div>
+
+          <div class="field">
+            <label for="prompt-input">Your prompt</label>
+            <textarea
+              id="prompt-input"
+              rows="6"
+              placeholder="Example: Solve this math problem... or: Write a Python function..."
+            ></textarea>
+          </div>
+
+          <button id="run-button">Run models</button>
+
+          <div id="status"></div>
+        </section>
+
+        <section class="results">
+          <h2>Final Answer</h2>
+          <pre id="final-answer"></pre>
+
+          <h3>Meta Explanation</h3>
+          <pre id="meta-info"></pre>
+
+          <h2>Model Candidates</h2>
+          <div id="candidates"></div>
+        </section>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
